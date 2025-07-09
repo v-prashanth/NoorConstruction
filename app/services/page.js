@@ -64,7 +64,7 @@ export default function ServicesPage() {
         <section className="relative py-28 px-6 min-h-[70vh] flex items-center justify-center">
           <div className="absolute inset-0">
             <Image
-              src="/images/services-bg.jpg"
+              src="/images/servicesBg.jpeg"
               alt="Construction Background"
               fill
               priority

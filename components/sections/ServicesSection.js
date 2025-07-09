@@ -88,7 +88,7 @@ export default function ServicesSection() {
       
       {/* Parallax/Zoom Layer */}
           <div
-            className="absolute inset-0 bg-[url('/images/service-bg.jpg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+            className="absolute inset-0 bg-[url('/images/serviceBg.jpeg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
             style={{ backgroundAttachment: 'fixed' }}
           />
 

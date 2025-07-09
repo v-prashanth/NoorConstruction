@@ -57,7 +57,7 @@ export default function HeroSection({ isActive }) {
         <div className="absolute inset-0 z-0 overflow-hidden">
   {/* Parallax/Zoom Layer */}
           <div
-            className="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+            className="absolute inset-0 bg-[url('/images/hero.jpeg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
             style={{ backgroundAttachment: 'fixed' }}
           />
 

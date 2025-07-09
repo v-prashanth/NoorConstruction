@@ -121,7 +121,7 @@ export default function ProcessSection() {
          */}
         {/*Prallax/Zoom Layer */}
           <div
-            className="absolute inset-0 bg-[url('/images/process-bg.jpg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+            className="absolute inset-0 bg-[url('/images/processBg.jpeg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
             style={{ backgroundAttachment: 'fixed' }}
           />
 

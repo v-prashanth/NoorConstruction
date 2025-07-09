@@ -57,7 +57,7 @@ export default function ContactPage() {
 
       <main className="flex-grow relative">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('/images/contact-bg.jpg')] bg-cover bg-center opacity-90" />
+          <div className="absolute inset-0 bg-[url('/images/contactBg.jpeg')] bg-cover bg-center opacity-90" />
           <GridOverlay baseSize={100} opacity={0.6} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black" />
         </div>

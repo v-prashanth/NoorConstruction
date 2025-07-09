@@ -114,7 +114,7 @@ export default function ProjectsSection() {
           <source src="/videos/hero-bg1.mp4" type="video/mp4" />
         </video> */}
         <div
-            className="absolute inset-0 bg-[url('/images/projects-bg.jpg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+            className="absolute inset-0 bg-[url('/images/projectsBg.jpeg')] bg-cover bg-center brightness-[0.2] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
             style={{ backgroundAttachment: 'fixed' }}
           />
 
