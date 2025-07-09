@@ -135,7 +135,7 @@ export default function OurStory() {
 
         <div className="relative z-20 max-w-5xl mx-auto h-full flex flex-col justify-center px-8 sm:px-8 md:px-12">
           <h1 ref={headlineRef} className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white mb-4 sm:mb-6 max-w-3xl">
-            We don’t just build — <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300">We Engineer.</span>
+            We don&apos;t just build — <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300">We Engineer.</span>
           </h1>
 
           <p ref={paragraphRef} className="text-sm sm:text-base md:text-xl text-gray-300 max-w-3xl leading-relaxed mb-8 md:mb-12">
