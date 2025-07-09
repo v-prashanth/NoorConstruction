@@ -302,7 +302,7 @@ export default function ProjectShowcase() {
         {/* Fixed Background */}
        <div className="fixed inset-0 z-0">
          <div
-            className="absolute inset-0 bg-[url('/images/hero3.jpg')] bg-cover bg-center brightness-[.20] scale-105"
+            className="absolute inset-0 bg-[url('/images/hero3.jpeg')] bg-cover bg-center brightness-[.20] scale-105"
             style={{ backgroundAttachment: "fixed" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/0 to-black/70" />
