@@ -69,6 +69,7 @@
 // }
 
 ////////////
+
 'use client';
 
 import ScrollManager from '@/components/shared/ScrollManager';
