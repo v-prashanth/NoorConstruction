@@ -88,7 +88,7 @@ export default function HeroSection({ isActive }) {
             </p>
           </div>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-2">
             <a href="/projects">
               <button className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-md transition-all hover:scale-105 active:scale-95 shadow-lg hover:shadow-red-500/30">
                 View Our Projects
