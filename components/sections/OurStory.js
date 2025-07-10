@@ -133,7 +133,8 @@ export default function OurStory() {
 
         <div ref={blobRef} className="absolute -bottom-32 -right-28 w-[350px] h-[350px] bg-[#ff3c3c] rounded-full opacity-20 blur-[120px] z-10" />
 
-        <div className="relative z-20 max-w-5xl mx-auto h-full flex flex-col justify-center px-8 sm:px-8 md:px-12">
+        {/* <div className="relative z-20 max-w-5xl mx-auto h-full flex flex-col justify-center px-8 sm:px-8 md:px-12"> */}
+<div className="relative z-20 max-w-5xl mx-auto h-full flex flex-col justify-center py-50 md:py-24 lg:py-40 px-8 sm:px-8 md:px-12">
           <h1 ref={headlineRef} className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white mb-4 sm:mb-6 max-w-3xl">
             We don&apos;t just build — <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300">We Engineer.</span>
           </h1>

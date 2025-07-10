@@ -104,7 +104,7 @@ export default function ServicesSection() {
 
       <div
         ref={contentRef}
-        className="relative z-10 flex flex-col justify-center items-start h-full px-6 sm:px-8 md:px-12 max-w-5xl mx-auto py-40 md:py-24 lg:py-40"
+        className="relative z-10 flex flex-col justify-center items-start h-full px-6 sm:px-8 md:px-12 max-w-5xl mx-auto py-50 md:py-24 lg:py-40"
       >
         <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 md:mb-10 leading-tight">
           Engineered <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300">for Excellence</span>
