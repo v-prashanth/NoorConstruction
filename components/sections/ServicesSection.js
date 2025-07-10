@@ -263,7 +263,7 @@ export default function ServicesSection() {
           </h2>
 
           <p className="text-gray-400 text-sm md:text-base lg:text-lg max-w-2xl mb-6 md:mb-8">
-            We specialize in advanced construction methodologies tailored for modern infrastructure. Here's what we bring to every project:
+            We specialize in advanced construction methodologies tailored for modern infrastructure. Here&apos;s what we bring to every project:
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 sm:gap-x-8 sm:gap-y-6 w-full max-w-3xl">
