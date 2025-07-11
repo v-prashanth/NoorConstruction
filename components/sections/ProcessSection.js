@@ -624,7 +624,7 @@ export default function ProcessSection() {
 
         <SectionWrapper>
           {/* <div className="relative z-20 flex flex-col justify-center items-start text-left max-w-6xl w-full"> */}
-          <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
+          <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[60vh]">
             <h2 ref={titleRef} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               <span className="text-white">Our </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#F9E79F]">Construction Process</span>

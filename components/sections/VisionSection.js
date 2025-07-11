@@ -355,7 +355,7 @@ export default function VisionSection() {
       </div>
 
       {/* <div ref={sectionRef} className="relative z-20 max-w-5xl mx-auto"> */}
-      <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
+      <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[60vh]">
 
         {/* Heading */}
         <div ref={el => contentRefs.current[0] = el} className="mb-8 md:mb-12 text-left">

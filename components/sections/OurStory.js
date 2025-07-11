@@ -398,7 +398,7 @@ export default function OurStory() {
   ref={sectionRef}
   className="relative z-20 h-full flex flex-col justify-center items-start text-left max-w-6xl w-full px-[clamp(16px,5vw,80px)]"
 > */}
-<div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
+<div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[60vh]">
 
 
           <h1

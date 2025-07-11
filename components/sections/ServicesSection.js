@@ -259,7 +259,7 @@ export default function ServicesSection() {
           ref={contentRef}
           className="relative z-10 flex flex-col justify-center items-start h-full"
         > */}
-        <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
+        <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[60vh]">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 md:mb-10 leading-tight">
             Engineered <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#e5c96f]">for Excellence</span>
           </h2>
