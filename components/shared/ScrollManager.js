@@ -546,7 +546,9 @@ export default function ScrollManager({ children }) {
       </div>
 
       {/* Fullscreen Overlay */}
-      <div className={`fixed inset-0 z-40 bg-black transform ${isRevealing ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`} />
+      {/* <div className={`fixed inset-0 z-40 bg-black transform ${isRevealing ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`} /> */}
+      <div className={`fixed inset-0 z-40 bg-[#D4AF37]/10 backdrop-blur-lg transform ${isRevealing ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`} />
+
 
       {/* Sections */}
       <div className="relative w-full h-full">

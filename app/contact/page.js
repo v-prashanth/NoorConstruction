@@ -59,7 +59,7 @@ export default function ContactPage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[url('/images/contactBg.jpeg')] bg-cover bg-center opacity-90" />
           <GridOverlay baseSize={100} opacity={0.6} />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black" />
         </div>
 
         <div className="relative z-10 py-34 px-6 flex items-center justify-center">
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-3 rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/20 disabled:opacity-50"
+                  className="w-full md:w-auto bg-[#D4AF37] hover:bg-[#e5c96f] text-white font-medium px-8 py-3 rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/20 disabled:opacity-50"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                     <p className="text-sm text-gray-400 mb-1">Email</p>
                     <a
                       href="mailto:ahmednoorshaik@gmail.com"
-                      className="text-red-400 hover:text-red-300 transition"
+                      className="text-[#D4AF37] hover:text-[#e5c96f] transition"
                     >
                       ahmednoorshaik@gmail.com
                     </a>

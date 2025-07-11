@@ -1,7 +1,18 @@
+// export default function SectionWrapper({ children, className = "" }) {
+//   return (
+//     <section className={`w-full pt-28 md:pt-32 pb-20 md:pb-32 ${className}`}>
+//       <div className="max-w-7xl mx-auto px-4 md:px-8">
+//         {children}
+//       </div>
+//     </section>
+//   );
+// }
+
+/////
 export default function SectionWrapper({ children, className = "" }) {
   return (
-    <section className={`w-full pt-28 md:pt-32 pb-20 md:pb-32 ${className}`}>
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <section className={`w-full pt-24 md:pt-28 pb-16 md:pb-24 ${className}`}>
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8">
         {children}
       </div>
     </section>

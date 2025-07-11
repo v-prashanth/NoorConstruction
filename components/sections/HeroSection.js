@@ -118,6 +118,121 @@
 
 
 /////////////
+
+// "use client";
+
+// import { useEffect, useRef } from "react";
+// import gsap from "gsap";
+// import GridOverlay from "@/components/shared/GridOverlay";
+// import WaveReveal from "../transitions/WaveReveal";
+// import SectionWrapper from "@/components/shared/SectionWrapper";
+// import Head from "next/head";
+
+// export default function HeroSection({ isActive }) {
+//   const titleRowRef = useRef(null);
+//   const subtitleRef = useRef(null);
+
+//   useEffect(() => {
+//     if (!isActive) return;
+
+//     const titleChildren = titleRowRef.current?.children || [];
+//     const tl = gsap.timeline();
+
+//     tl.fromTo(
+//       titleChildren,
+//       { y: 80, opacity: 0 },
+//       { y: 0, opacity: 1, duration: 1.2, stagger: 0.08, ease: "back.out(1.7)" }
+//     ).fromTo(
+//       subtitleRef.current,
+//       { scaleX: 0, opacity: 0 },
+//       { scaleX: 1, opacity: 1, duration: 1, ease: "power3.out" },
+//       "-=0.8"
+//     );
+
+//     return () => tl.kill();
+//   }, [isActive]);
+
+//   return (
+//     <>
+//       <Head>
+//         <title>Noor Construction Works | Engineering Excellence</title>
+//         <meta
+//           name="description"
+//           content="Noor Construction Works delivers top-tier engineering solutions since 2025. Explore our premium construction projects."
+//         />
+//       </Head>
+
+//       <SectionWrapper className="relative min-h-screen bg-black overflow-hidden">
+
+//         {/* Background Layers */}
+//         <div className="absolute inset-0 z-0 overflow-hidden">
+//           <div
+//             className="absolute inset-0 bg-[url('/images/hero.jpeg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+//             style={{ backgroundAttachment: 'fixed' }}
+//           />
+//           <div className="absolute inset-0 z-10 bg-black/50 animate-[fadeOverlay_10s_ease-in-out_infinite]" />
+//           <div className="absolute inset-0 bg-[url('/images/547.png')] opacity-5 mix-blend-overlay pointer-events-none" />
+//         </div>
+
+//         <GridOverlay baseSize={100} opacity={0.1} />
+//         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10" />
+
+//         {/* Content */}
+//         <div className="relative z-20 flex flex-col items-center text-center min-h-[60vh]">
+//           {/* <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]"></div> */}
+
+//           <div
+//             ref={titleRowRef}
+//             className="flex flex-col md:flex-row items-baseline justify-center gap-2 md:gap-4 lg:gap-6 mb-4"
+//           >
+//             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white">
+//               NOOR{" "}
+//               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#f5f5f5]">
+//                 CONSTRUCTION
+//               </span>{" "}
+//               WORKS
+//             </h1>
+//           </div>
+
+//           <div className="relative overflow-hidden mb-8">
+//             <p
+//               ref={subtitleRef}
+//               className="text-xl sm:text-2xl md:text-3xl text-gray-300 px-4 max-w-3xl leading-relaxed"
+//             >
+//               Engineering Excellence Since 2025
+//             </p>
+//           </div>
+
+//           <div className="flex flex-wrap justify-center gap-4">
+//             <a href="/projects">
+//               <button className="px-8 py-3 bg-[#D4AF37] hover:bg-[#c8a136] text-black font-medium rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-lg hover:shadow-yellow-300/30">
+//                 View Our Projects
+//               </button>
+//             </a>
+//             <a href="/contact">
+//               <button className="px-8 py-3 bg-transparent border-2 border-white/30 hover:border-white text-white font-medium rounded-2xl transition-all hover:scale-105 active:scale-95">
+//                 Contact Our Team
+//               </button>
+//             </a>
+//           </div>
+//         </div>
+
+//         {/* Scroll Indicator */}
+//         <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-40 cursor-default">
+//           <span className="text-xs tracking-widest text-white/80 font-mono">
+//             SCROLL TO EXPLORE
+//           </span>
+//         </div>
+
+//         <WaveReveal fill="#0a0a0a" className="absolute bottom-0 left-0 z-30 w-full" style={{ height: "15vh" }} />
+//       </SectionWrapper>
+//     </>
+//   );
+// }
+
+
+
+//////////////
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -159,71 +274,84 @@ export default function HeroSection({ isActive }) {
           name="description"
           content="Noor Construction Works delivers top-tier engineering solutions since 2025. Explore our premium construction projects."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <SectionWrapper className="relative min-h-screen bg-black overflow-hidden">
-
-        {/* Background Layers */}
+      <SectionWrapper className="relative min-h-[calc(100vh-80px)] md:min-h-screen bg-black overflow-hidden">
+        {/* Background Layers - Optimized for performance */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div
-            className="absolute inset-0 bg-[url('/images/hero.jpeg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
-            style={{ backgroundAttachment: 'fixed' }}
+            className="absolute inset-0 bg-[url('/images/hero-small.jpeg')] sm:bg-[url('/images/hero.jpeg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
+            style={{ 
+              backgroundAttachment: 'fixed',
+              imageRendering: 'crisp-edges'
+            }}
+            aria-hidden="true"
           />
-          <div className="absolute inset-0 z-10 bg-black/50 animate-[fadeOverlay_10s_ease-in-out_infinite]" />
-          <div className="absolute inset-0 bg-[url('/images/547.png')] opacity-5 mix-blend-overlay pointer-events-none" />
+          <div className="absolute inset-0 z-10 bg-black/50 animate-[fadeOverlay_10s_ease-in-out_infinite]" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[url('/images/547.png')] opacity-5 mix-blend-overlay pointer-events-none" aria-hidden="true" />
         </div>
 
         <GridOverlay baseSize={100} opacity={0.1} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10" aria-hidden="true" />
 
-        {/* Content */}
-        <div className="relative z-20 flex flex-col items-center text-center min-h-[60vh]">
-          {/* <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]"></div> */}
-
+        {/* Content - Optimized for all devices */}
+        <div className="relative z-20 flex flex-col items-center justify-center text-center min-h-[60vh] px-4 py-16">
           <div
             ref={titleRowRef}
-            className="flex flex-col md:flex-row items-baseline justify-center gap-2 md:gap-4 lg:gap-6 mb-4"
+            className="flex flex-wrap items-center justify-center gap-x-2 md:gap-x-4 lg:gap-x-6 gap-y-1 mb-4 px-2"
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white">
-              NOOR{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#f5f5f5]">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
+              <span className="block md:inline">NOOR </span>
+              <span className="block md:inline text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#f5f5f5]">
                 CONSTRUCTION
-              </span>{" "}
-              WORKS
+              </span>
+              <span className="block md:inline"> WORKS</span>
             </h1>
           </div>
 
-          <div className="relative overflow-hidden mb-8">
+          <div className="relative overflow-hidden mb-8 max-w-[90vw]">
             <p
               ref={subtitleRef}
-              className="text-xl sm:text-2xl md:text-3xl text-gray-300 px-4 max-w-3xl leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 px-2 max-w-3xl leading-relaxed"
             >
               Engineering Excellence Since 2025
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="/projects">
-              <button className="px-8 py-3 bg-[#D4AF37] hover:bg-[#c8a136] text-black font-medium rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-lg hover:shadow-yellow-300/30">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+            <a href="/projects" className="focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-offset-2 rounded-2xl">
+              <button 
+                className="px-6 sm:px-8 py-2 sm:py-3 bg-[#D4AF37] hover:bg-[#c8a136] text-black font-medium rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-lg hover:shadow-yellow-300/30"
+                aria-label="View our projects"
+              >
                 View Our Projects
               </button>
             </a>
-            <a href="/contact">
-              <button className="px-8 py-3 bg-transparent border-2 border-white/30 hover:border-white text-white font-medium rounded-2xl transition-all hover:scale-105 active:scale-95">
+            <a href="/contact" className="focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded-2xl">
+              <button 
+                className="px-6 sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-white/30 hover:border-white text-white font-medium rounded-2xl transition-all hover:scale-105 active:scale-95"
+                aria-label="Contact our team"
+              >
                 Contact Our Team
               </button>
             </a>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-40 cursor-default">
+        Scroll Indicator
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-40 cursor-default">
           <span className="text-xs tracking-widest text-white/80 font-mono">
             SCROLL TO EXPLORE
           </span>
         </div>
 
-        <WaveReveal fill="#0a0a0a" className="absolute bottom-0 left-0 z-30 w-full" style={{ height: "15vh" }} />
+        <WaveReveal 
+          fill="#0a0a0a" 
+          className="absolute bottom-0 left-0 z-30 w-full" 
+          style={{ height: "15vh" }} 
+          aria-hidden="true"
+        />
       </SectionWrapper>
     </>
   );
