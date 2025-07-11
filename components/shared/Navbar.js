@@ -47,7 +47,7 @@ export default function MamanNavbar() {
               >
                 <span>{link.label}</span>
                 <span
-                  className={`block h-0.5 bg-red-500 transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}
+                  className={`block h-0.5 bg-[#D4AF37] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}
                 ></span>
               </Link>
             );
@@ -62,37 +62,46 @@ export default function MamanNavbar() {
       </div>
 
       <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="fixed inset-0 bg-black flex flex-col items-center justify-center space-y-10 z-40"
-          >
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="absolute top-8 right-8 text-white p-3 rounded hover:bg-white/10 transition duration-300"
-            >
-              <X size={32} />
-            </button>
+  {mobileMenuOpen && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+     className="fixed inset-0 bg-[#D4AF37]/10 backdrop-blur-lg flex flex-col items-center justify-center space-y-10 z-40"
 
-            {navLinks.map((link, idx) => {
-              const isActive = pathname === link.href;
-              return (
-                <Link
-                  key={idx}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`text-white uppercase text-2xl tracking-widest ${isActive ? 'underline underline-offset-8 decoration-red-500' : 'hover:text-red-500'} transition duration-300`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </motion.div>
-        )}
-      </AnimatePresence>
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setMobileMenuOpen(false)}
+        className="absolute top-8 right-8 text-[#D4AF37] p-3 rounded hover:bg-[#D4AF37]/10 transition duration-300"
+        aria-label="Close Menu"
+      >
+        <X size={32} />
+      </button>
+
+      {/* Links */}
+      {navLinks.map((link, idx) => {
+        const isActive = pathname === link.href;
+        return (
+          <Link
+            key={idx}
+            href={link.href}
+            onClick={() => setMobileMenuOpen(false)}
+            className={`text-white uppercase text-2xl tracking-widest ${
+              isActive
+                ? 'underline underline-offset-8 decoration-[#D4AF37]'
+                : 'hover:text-[#D4AF37]'
+            } transition duration-300`}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </header>
   );
 }

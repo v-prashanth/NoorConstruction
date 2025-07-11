@@ -161,6 +161,7 @@
 
 
 ////////////
+
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -254,16 +255,17 @@ export default function ServicesSection() {
       <div className="absolute -bottom-32 -left-32 w-[350px] h-[350px] bg-[#D4AF37] rounded-full opacity-15 blur-[120px] z-0" />
 
       <SectionWrapper>
-        <div
+        {/* <div
           ref={contentRef}
           className="relative z-10 flex flex-col justify-center items-start h-full"
-        >
+        > */}
+        <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[70vh]">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 md:mb-10 leading-tight">
             Engineered <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#e5c96f]">for Excellence</span>
           </h2>
 
           <p className="text-gray-400 text-sm md:text-base lg:text-lg max-w-2xl mb-6 md:mb-8">
-            We specialize in advanced construction methodologies tailored for modern infrastructure. Here&apos;s what we bring to every project:
+            We specialize in advanced construction methodologies tailored for modern infrastructure. Here's what we bring to every project:
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 sm:gap-x-8 sm:gap-y-6 w-full max-w-3xl">

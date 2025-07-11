@@ -423,6 +423,7 @@
 
 ////
 
+
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
@@ -570,6 +571,7 @@ export default function ScrollManager({ children }) {
 
 
 //////////
+
 // 'use client';
 
 // import { useEffect, useRef, useState, useCallback } from 'react';
