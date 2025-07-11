@@ -393,7 +393,7 @@ export default function ProjectShowcase() {
               key={i}
               onClick={() => scrollToProject(i)}
               aria-label={`Go to project ${i + 1}`}
-              className={`w-3 h-3 rounded-full ${i === currentIndex ? 'bg-red-500 scale-125' : 'bg-white/30 hover:bg-white/50'} transition`}
+              className={`w-3 h-3 rounded-full ${i === currentIndex ? 'bg-[#D4AF37] scale-125' : 'bg-white/30 hover:bg-white/50'} transition`}
             />
           ))}
         </div>

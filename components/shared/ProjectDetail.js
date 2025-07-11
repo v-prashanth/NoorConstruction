@@ -18,7 +18,7 @@ export default function ProjectDetail({ project, mediaIndex, setMediaIndex }) {
         </div>
         <div className="w-full bg-gray-700 rounded-full h-1">
           <div 
-            className="bg-red-500 h-1 rounded-full" 
+            className="bg-[#D4AF37] h-1 rounded-full" 
             style={{ width: project.progress }}
           />
         </div>

@@ -116,7 +116,7 @@ export default function ServicesPage() {
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-white">Start Your Project</h2>
             <a href="/contact">
-              <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-lg transition">
+              <button className="bg-[#D4AF37] hover:bg-[#c8a136] text-white font-medium py-3 px-8 rounded-lg transition">
                 Contact Our Team
               </button>
             </a>
@@ -158,10 +158,10 @@ function EnhancedBlueprintGrid({ opacity = 0.4 }) {
 
 function ServiceCard({ service }) {
   return (
-    <div className="group relative p-8 rounded-xl bg-gray-900/80 backdrop-blur-sm border border-gray-700 hover:border-red-500 transition-all hover:bg-gray-900">
+    <div className="group relative p-8 rounded-xl bg-gray-900/80 backdrop-blur-sm border border-gray-700 hover:border-[#D4AF37] transition-all hover:bg-gray-900">
       <div className="flex items-start gap-6">
-        <div className="flex-shrink-0 bg-gray-800 p-3 rounded-lg group-hover:bg-red-500/20 transition">
-          <service.icon className="w-8 h-8 text-red-400 group-hover:text-red-300 transition" />
+        <div className="flex-shrink-0 bg-gray-800 p-3 rounded-lg group-hover:bg-[#D4AF37]/20 transition">
+          <service.icon className="w-8 h-8 text-[#D4AF37] transition" />
         </div>
         <div>
           <h3 className="text-2xl font-semibold text-white mb-2">{service.title}</h3>
