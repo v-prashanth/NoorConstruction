@@ -177,8 +177,8 @@ export default function HeroSection({ isActive }) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10" />
 
         {/* Content */}
-        {/* <div className="relative z-20 flex flex-col items-center text-center"> */}
-        <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
+        <div className="relative z-20 flex flex-col items-center text-center min-h-[60vh]">
+          {/* <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]"></div> */}
 
           <div
             ref={titleRowRef}

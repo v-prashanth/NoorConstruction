@@ -403,7 +403,7 @@ export default function OurStory() {
 
           <h1
             ref={headlineRef}
-            className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white mb-6"
+            className="text-4xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white mb-6"
           >
             We don&apos;t just build —{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#f5f5f5]">
