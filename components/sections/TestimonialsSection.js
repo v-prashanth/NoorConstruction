@@ -238,7 +238,7 @@ export default function TestimonialsSection() {
       <div className="absolute inset-0 bg-[url('/images/547.png')] opacity-5 mix-blend-overlay pointer-events-none" />
       <GridOverlay baseSize={100} opacity={0.1} />
 
-      <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[70vh]">
+      <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
 
         <div ref={headingRef} className="mb-8 md:mb-12">
           {/* <p className="uppercase tracking-wider text-xs md:text-sm text-[#D4AF37] mb-2">Testimonials</p> */}

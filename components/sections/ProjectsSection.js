@@ -378,7 +378,7 @@ export default function ProjectsSection() {
 
         <SectionWrapper>
           {/* <div className="relative z-20 flex flex-col justify-center items-start h-full"> */}
-          <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[70vh]">
+          <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]">
 
             <p className="text-[#D4AF37] uppercase tracking-widest text-xs md:text-sm mb-4">
               Current Developments

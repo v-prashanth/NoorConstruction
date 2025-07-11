@@ -164,7 +164,8 @@ export default function HeroSection({ isActive }) {
       <SectionWrapper className="relative min-h-screen bg-black overflow-hidden">
 
         {/* Background Layers */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 z-0 overflow-hidden mx-auto min-h-[50vh]">
+        {/* <div ref={sectionRef} className="relative z-20 flex flex-col justify-center items-start text-left max-w-4xl mx-auto min-h-[50vh]"> */}
           <div
             className="absolute inset-0 bg-[url('/images/hero.jpeg')] bg-cover bg-center brightness-[0.4] scale-105 animate-[floatImage_12s_ease-in-out_infinite]"
             style={{ backgroundAttachment: 'fixed' }}
